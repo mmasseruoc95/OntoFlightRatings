@@ -1,0 +1,890 @@
+@prefix : <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#> .
+
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings> rdf:type owl:Ontology ;
+                                                                               <http://purl.org/dc/terms/license> """Copyright 2024 Martí Masot Serrano
+
+
+
+Licensed under the Apache License, Version 2.0 (the \"License\");
+
+you may not use this file except in compliance with the License.
+
+You may obtain a copy of the License at
+
+
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+
+
+Unless required by applicable law or agreed to in writing, software
+
+distributed under the License is distributed on an \"AS IS\" BASIS,
+
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+
+See the License for the specific language governing permissions and
+
+limitations under the License."""@en ;
+                                                                               rdfs:comment "This ontology is designed to infer passenger satisfaction with flights, providing a framework for evaluating their experiences and perceptions. It serves as a practical application within the field of Knowledge Representation, as taught in the course offered by UOC (Universitat Oberta de Catalunya), known as 'Representation of Knowledge'."@en ;
+                                                                               rdfs:label "OntoFlightRatings" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
+<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#sameAs
+rdfs:sameAs rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#hasAnswered
+:hasAnswered rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf owl:topObjectProperty ;
+             owl:inverseOf :isAnsweredBy ;
+             rdfs:domain :Passenger ;
+             rdfs:range :Review ;
+             rdfs:comment "This property is used to relate a passenger who has answered a review within the ontology."@en ;
+             rdfs:label "has Answered"@en .
+
+
+###  http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#hasDestination
+:hasDestination rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf owl:topObjectProperty ;
+                owl:inverseOf :isDestinationOf ;
+                rdfs:domain :Flight ;
+                rdfs:range :Airport ;
+                rdfs:comment "This property is used to relate a flight entity with the destination airport within the ontology. It serves as a means of establishing a relationship between a specific flight instance and the airport entity representing its destination."@en ;
+                rdfs:label "has Destination"@en .
+
+
+###  http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#hasFrom
+:hasFrom rdf:type owl:ObjectProperty ;
+         owl:inverseOf :isFrom ;
+         rdfs:domain :Country ;
+         rdfs:range :Passenger ;
+         rdfs:comment "This property is the inverse of isFrom"@en ;
+         rdfs:label "has From"@en .
+
+
+###  http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#hasOrigin
+:hasOrigin rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf owl:topObjectProperty ;
+           owl:inverseOf :isOriginOf ;
+           rdfs:domain :Flight ;
+           rdfs:range :Airport ;
+           rdfs:comment "This property is used to relate a flight entity with the origin airport within the ontology. It serves as a means of establishing a relationship between a specific flight instance and the airport entity representing its point of origin."@en ;
+           rdfs:label "has Origin"@en .
+
+
+###  http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#hasReviewed
+:hasReviewed rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf owl:topObjectProperty ;
+             owl:inverseOf :isReviewedBy ;
+             rdfs:domain :Review ;
+             rdfs:range :Flight ;
+             rdfs:comment "This property is used to relate a review with the flight it evaluates within the ontology."@en ;
+             rdfs:label "hasReviewed"@en .
+
+
+###  http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#hasStopOver
+:hasStopOver rdf:type owl:ObjectProperty ;
+             owl:inverseOf :isStopOverOf ;
+             rdfs:domain :Flight ;
+             rdfs:range :Airport ;
+             rdfs:comment "This property is used to relate a flight within an airport, reflecting that the flight has a stopover and the airport is where the passenger made the stopover."@en ;
+             rdfs:label "hasStopOver"@en .
+
+
+###  http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#hasVehicle
+:hasVehicle rdf:type owl:ObjectProperty ;
+            owl:inverseOf :isVehicleOf ;
+            rdfs:domain :Flight ;
+            rdfs:range :Aircraft ;
+            rdfs:comment "This property is used to relate the classes Flight and Aircraft within the ontology, indicating that the aircraft is used to operate the flight."@en ;
+            rdfs:label "has Vehicle"@en .
+
+
+###  http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#isAnsweredBy
+:isAnsweredBy rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf owl:topObjectProperty ;
+              rdfs:domain :Review ;
+              rdfs:range :Passenger ;
+              rdfs:comment "Inverse property of hasAnswered."@en ;
+              rdfs:label "is Answered By"@en .
+
+
+###  http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#isDestinationOf
+:isDestinationOf rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf owl:topObjectProperty ;
+                 rdfs:domain :Airport ;
+                 rdfs:range :Flight ;
+                 rdfs:comment "Inverse property of hasDestination"@en ;
+                 rdfs:label "is Destination Of"@en .
+
+
+###  http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#isFrom
+:isFrom rdf:type owl:ObjectProperty ;
+        rdfs:domain :Passenger ;
+        rdfs:range :Country ;
+        rdfs:comment "This property is used to relate a passenger with the country from which they originate within the ontology. It serves as a means of establishing a relationship between a passenger individual and the country entity representing their place of origin."@en ;
+        rdfs:label "is From"@en .
+
+
+###  http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#isOriginOf
+:isOriginOf rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf owl:topObjectProperty ;
+            rdfs:domain :Airport ;
+            rdfs:range :Flight ;
+            rdfs:comment "Inverse property of hasOrigin."@en ;
+            rdfs:label "is Origin Of"@en .
+
+
+###  http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#isReviewedBy
+:isReviewedBy rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf owl:topObjectProperty ;
+              rdfs:domain :Flight ;
+              rdfs:range :Review ;
+              rdfs:comment "Is the inverse of hasReviewed"@en ;
+              rdfs:label "is Reviewed By"@en .
+
+
+###  http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#isStopOverOf
+:isStopOverOf rdf:type owl:ObjectProperty ;
+              rdfs:domain :Airport ;
+              rdfs:range :Flight ;
+              rdfs:comment "This is the inverse of has StopOver."@en ;
+              rdfs:label "is StopOver Of"@en .
+
+
+###  http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#isVehicleOf
+:isVehicleOf rdf:type owl:ObjectProperty ;
+             rdfs:domain :Aircraft ;
+             rdfs:range :Flight ;
+             rdfs:comment "This property is the inverse of has Vehicle"@en ;
+             rdfs:label "is Vehicle"@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#aircraftBrand
+:aircraftBrand rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf owl:topDataProperty ;
+               rdfs:domain :Aircraft ;
+               rdfs:range xsd:string ;
+               rdfs:comment "This data property is used to store the brand of the aircraft."@en ;
+               rdfs:label "Aircraft Brand"@en .
+
+
+###  http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#aircraftModel
+:aircraftModel rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf owl:topDataProperty ;
+               rdfs:domain :Aircraft ;
+               rdfs:range xsd:string ;
+               rdfs:comment "This data property is used to store the model of the aircraft"@en ;
+               rdfs:label "Aircraft Model"@en .
+
+
+###  http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#airportName
+:airportName rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf owl:topDataProperty ;
+             rdfs:domain :Airport ;
+             rdfs:range xsd:string ;
+             rdfs:comment "This data property is used to store the airport name"@en ;
+             rdfs:label "Airport Name"@en .
+
+
+###  http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#countryName
+:countryName rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf owl:topDataProperty ;
+             rdfs:domain :Country ;
+             rdfs:range xsd:string ;
+             rdfs:comment "This data property is used to store the name of the country"@en ;
+             rdfs:label "Country Name"@en .
+
+
+###  http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#flightDate
+:flightDate rdf:type owl:DatatypeProperty ;
+            rdfs:subPropertyOf owl:topDataProperty ;
+            rdfs:domain :Flight ;
+            rdfs:range xsd:string ;
+            rdfs:comment "This data property is used to store the date of the flight"@en ;
+            rdfs:label "Flight Date"@en .
+
+
+###  http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#personName
+:personName rdf:type owl:DatatypeProperty ;
+            rdfs:subPropertyOf owl:topDataProperty ;
+            rdfs:domain :Passenger ;
+            rdfs:range xsd:string ;
+            rdfs:comment "This data property is used to store the name of a passenger."@en ;
+            rdfs:label "Person Name"@en .
+
+
+###  http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#reviewComment
+:reviewComment rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf owl:topDataProperty ;
+               rdfs:domain :Review ;
+               rdfs:range xsd:string ;
+               rdfs:comment "This data property is used to store the comment of a review."@en ;
+               rdfs:label "Review Comment"@en .
+
+
+###  http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#reviewDate
+:reviewDate rdf:type owl:DatatypeProperty ;
+            rdfs:subPropertyOf owl:topDataProperty ;
+            rdfs:domain :Review ;
+            rdfs:range xsd:string ;
+            rdfs:comment "This data property is used to store the date of a review"@en ;
+            rdfs:label "Review Date"@en .
+
+
+###  http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#reviewRatingValue
+:reviewRatingValue rdf:type owl:DatatypeProperty ;
+                   rdfs:subPropertyOf owl:topDataProperty ;
+                   rdfs:domain :Review ;
+                   rdfs:range xsd:float ;
+                   rdfs:comment "This data property is used to store the value of the rating of a Review about a Flight."@en ;
+                   rdfs:label "Review Rating Value"@en .
+
+
+###  http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#reviewTitle
+:reviewTitle rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf owl:topDataProperty ;
+             rdfs:domain :Review ;
+             rdfs:range xsd:string ;
+             rdfs:comment "This data property is used to store the title of a review."@en ;
+             rdfs:label "Review Title"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Aircraft
+:Aircraft rdf:type owl:Class ;
+          rdfs:comment "This class represents the aircraft that operate the flight within the ontology."@en ;
+          rdfs:label "Aircraft"@en ;
+          rdfs:sameAs "https://dbpedia.org/ontology/Aircraft"@en .
+
+
+###  http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Airport
+:Airport rdf:type owl:Class ;
+         owl:disjointWith :Country ;
+         rdfs:comment "This location represents an airport within the ontology."@en ;
+         rdfs:label "Airport"@en ;
+         rdfs:sameAs "https://dbpedia.org/ontology/Airport"@en .
+
+
+###  http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#BadReview
+:BadReview rdf:type owl:Class ;
+           rdfs:subClassOf :TypeOfReview ;
+           owl:disjointWith :GoodReview ;
+           rdfs:comment "This class is used to classify a review as \"bad\" within the ontology, based on the rating value or recommendation provided by the passenger."@en ;
+           rdfs:label "BadReview"@en .
+
+
+###  http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Business
+:Business rdf:type owl:Class ;
+          rdfs:subClassOf :PassengerType ;
+          rdfs:comment "This class represents a subclass within the ontology, specifically categorizing passengers who travel for business purposes."@en ;
+          rdfs:label "Business"@en .
+
+
+###  http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#BusinessClass
+:BusinessClass rdf:type owl:Class ;
+               rdfs:subClassOf :SeatType ;
+               rdfs:comment "This class represents the seat type of business class within the ontology."@en ;
+               rdfs:label "Business Class"@en .
+
+
+###  http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Country
+:Country rdf:type owl:Class ;
+         rdfs:comment "This location represents a country within the ontology."@en ;
+         rdfs:label "Country"@en ;
+         rdfs:sameAs "https://dbpedia.org/ontology/Country"@en .
+
+
+###  http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#CoupleLeisure
+:CoupleLeisure rdf:type owl:Class ;
+               rdfs:subClassOf :PassengerType ;
+               rdfs:comment "This class represents a subclass within the ontology, specifically categorizing passengers who travel as a couple for leisure purposes."@en ;
+               rdfs:label "Couple Leisure"@en .
+
+
+###  http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#EconomyClass
+:EconomyClass rdf:type owl:Class ;
+              rdfs:subClassOf :SeatType ;
+              rdfs:comment "This class represents the seat type of economy class within the ontology."@en ;
+              rdfs:label "Economy Class"@en .
+
+
+###  http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#FamilyLeisure
+:FamilyLeisure rdf:type owl:Class ;
+               rdfs:subClassOf :PassengerType ;
+               rdfs:comment "This class represents a subclass within the ontology, specifically categorizing passengers who travel as a family for leisure purposes."@en ;
+               rdfs:label "Family Leisure"@en .
+
+
+###  http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#FirstClass
+:FirstClass rdf:type owl:Class ;
+            rdfs:subClassOf :SeatType ;
+            rdfs:comment "This class represents the seat type of first class within the ontology."@en ;
+            rdfs:label "First Class"@en .
+
+
+###  http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Flight
+:Flight rdf:type owl:Class ;
+        rdfs:subClassOf [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasDestination ;
+                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                          owl:onClass :Airport
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasOrigin ;
+                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                          owl:onClass :Airport
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasVehicle ;
+                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                          owl:onClass :Aircraft
+                        ] ;
+        rdfs:comment "This class represents a flight and its associated information within the ontology. It serves as a comprehensive container for various attributes and relationships related to a specific flight instance. These attributes may include the airport of origin and destinations, reviews provided by passengers who experienced the flight, the aircraft assigned to operate the flight."@en ;
+        rdfs:label "Flight"@en .
+
+
+###  http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#GoodReview
+:GoodReview rdf:type owl:Class ;
+            rdfs:subClassOf :TypeOfReview ;
+            rdfs:comment "This class is used to classify a review as \"good\" within the ontology, based on the rating value or recommendation provided by the passenger."@en ;
+            rdfs:label "GoodReview"@en .
+
+
+###  http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#NotRecommended
+:NotRecommended rdf:type owl:Class ;
+                rdfs:subClassOf :Recommendation ;
+                owl:disjointWith :Recommended ;
+                rdfs:comment "This class is used to classify a review when the passenger does not recommend the flight within the ontology."@en ;
+                rdfs:label "Not Recommended"@en .
+
+
+###  http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#NotSatisfiedPassenger
+:NotSatisfiedPassenger rdf:type owl:Class ;
+                       rdfs:subClassOf :Passenger ;
+                       owl:disjointWith :SatisfiedPassenger ;
+                       rdfs:comment "This class represents a dissatisfied passenger."@en ;
+                       rdfs:label "DissatisfiedPassenger"@en .
+
+
+###  http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#NotVerified
+:NotVerified rdf:type owl:Class ;
+             rdfs:subClassOf :Verification ;
+             owl:disjointWith :Verified ;
+             rdfs:comment "This class is used to represent when a user's review of a flight is unverified within the ontology."@en ;
+             rdfs:label "Not Verified"@en .
+
+
+###  http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Passenger
+:Passenger rdf:type owl:Class ;
+           rdfs:subClassOf [ rdf:type owl:Restriction ;
+                             owl:onProperty :hasAnswered ;
+                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                             owl:onClass :Review
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :isFrom ;
+                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                             owl:onClass :Country
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :personName ;
+                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                             owl:onDataRange xsd:string
+                           ] ;
+           rdfs:comment "This is a class that represents a passenger who takes a flight and subsequently provides a review. Within this class, passengers can be classified as either satisfied or dissatisfied with the service."@en ;
+           rdfs:label "Passenger"@en ,
+                      "Person"@en .
+
+
+###  http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#PassengerType
+:PassengerType rdf:type owl:Class ;
+               rdfs:subClassOf :Review ;
+               rdfs:comment "This class is designed to classify the composition of the passenger group based on their travel circumstances within the ontology. It serves as a categorization for identifying whether passengers traveled for business purposes, with family members, alone, or as a couple."@en ;
+               rdfs:label "Passenger Type"@en .
+
+
+###  http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#PremiumClass
+:PremiumClass rdf:type owl:Class ;
+              rdfs:subClassOf :SeatType ;
+              rdfs:comment "This class represents the seat type of premium class within the ontology."@en ;
+              rdfs:label "Premium Class"@en .
+
+
+###  http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Recommendation
+:Recommendation rdf:type owl:Class ;
+                rdfs:subClassOf :Review ;
+                rdfs:comment "This class is used to classify whether a user recommends or does not recommend a flight in a review within the ontology."@en ;
+                rdfs:label "Recommendation"@en .
+
+
+###  http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Recommended
+:Recommended rdf:type owl:Class ;
+             rdfs:subClassOf :Recommendation ;
+             rdfs:comment "This class is used to classify a review when the passenger does recommend the flight within the ontology."@en ;
+             rdfs:label "Recommended"@en .
+
+
+###  http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Review
+:Review rdf:type owl:Class ;
+        rdfs:subClassOf [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasReviewed ;
+                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                          owl:onClass :Flight
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :isAnsweredBy ;
+                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                          owl:onClass :Passenger
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :reviewRatingValue ;
+                          owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                               owl:onDatatype xsd:float ;
+                                               owl:withRestrictions ( [ xsd:minInclusive "0.0"^^xsd:float
+                                                                      ]
+                                                                    )
+                                             ]
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :reviewRatingValue ;
+                          owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                               owl:onDatatype xsd:float ;
+                                               owl:withRestrictions ( [ xsd:maxInclusive "10.0"^^xsd:float
+                                                                      ]
+                                                                    )
+                                             ]
+                        ] ;
+        rdfs:comment "This class represents the review answered by a passenger about a flight within the ontology. It serves as a container for feedback provided by passengers regarding their flight experiences. This class includes subclasses to classify the review based on various factors, such as the class of service (e.g., Business class, Economy class), the composition of the passenger group (e.g., solo traveler, family, business group), and any other relevant categorizations."@en ;
+        rdfs:label "Review"@en .
+
+
+###  http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#SatisfiedPassenger
+:SatisfiedPassenger rdf:type owl:Class ;
+                    rdfs:subClassOf :Passenger ;
+                    rdfs:comment "This class represents a satisfied passenger."@en ;
+                    rdfs:label "SatisfiedPassenger"@en .
+
+
+###  http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#SeatType
+:SeatType rdf:type owl:Class ;
+          rdfs:subClassOf :Review ;
+          rdfs:comment "This class is used to classify the seating location of a passenger who is responding to the review within the ontology."@en ;
+          rdfs:label "Seat Type"@en .
+
+
+###  http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#SoloLeisure
+:SoloLeisure rdf:type owl:Class ;
+             rdfs:subClassOf :PassengerType ;
+             rdfs:comment "This class represents a subclass within the ontology, specifically categorizing passengers who travel solo for leisure purposes."@en ;
+             rdfs:label "Solo Leisure"@en .
+
+
+###  http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#TransitFlight
+:TransitFlight rdf:type owl:Class ;
+               rdfs:subClassOf :Flight ;
+               rdfs:comment "This class is used to classify a Flight within the ontology, indicating that it has a stopover airport."@en ;
+               rdfs:label "TransitFlight"@en .
+
+
+###  http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#TypeOfReview
+:TypeOfReview rdf:type owl:Class ;
+              rdfs:subClassOf :Review ;
+              rdfs:comment "This class is used to classify a review as either a good or bad review within the ontology, based on the rating or recommendation provided by the review of the passenger."@en ;
+              rdfs:label "Type Of Review"@en .
+
+
+###  http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#UnknownRecommended
+:UnknownRecommended rdf:type owl:Class ;
+                    rdfs:subClassOf :Recommendation ;
+                    rdfs:comment "This class is used to classify a review when the recommendation of the passenger is unknown."@en ;
+                    rdfs:label "Unknown Recommended"@en .
+
+
+###  http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Verification
+:Verification rdf:type owl:Class ;
+              rdfs:subClassOf :Review ;
+              rdfs:comment "This class is used to represent whether a review has been verified within the ontology."@en ;
+              rdfs:label "Verification"@en .
+
+
+###  http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Verified
+:Verified rdf:type owl:Class ;
+          rdfs:subClassOf :Verification ;
+          rdfs:comment "This class is used to represent when a user's review of a flight is verified within the ontology."@en ;
+          rdfs:label "Verified"@en .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Aircraft001
+:Aircraft001 rdf:type owl:NamedIndividual ,
+                      :Aircraft ;
+             :aircraftBrand "Boeing" ;
+             :aircraftModel "747" ;
+             rdfs:comment "This instance represents a Boeing 747"@en ;
+             rdfs:label "Aircraft 001"@en .
+
+
+###  http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Aircraft002
+:Aircraft002 rdf:type owl:NamedIndividual ,
+                      :Aircraft ;
+             :aircraftBrand "A380" ;
+             :aircraftModel "800" ;
+             rdfs:comment "This instance represents an A380 aircraft."@en ;
+             rdfs:label "Aircraft 002"@en .
+
+
+###  http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Airport001
+:Airport001 rdf:type owl:NamedIndividual ,
+                     :Airport ;
+            :airportName "Tokyo" ;
+            rdfs:comment "This instance is used to represent the airport of Tokyo."@en ;
+            rdfs:label "Airport 001"@en .
+
+
+###  http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Airport002
+:Airport002 rdf:type owl:NamedIndividual ,
+                     :Airport ;
+            :airportName "London Heathrow" ;
+            rdfs:comment "This instance is used to represents the airport of London Heathrow."@en ;
+            rdfs:label "Airport 002"@en .
+
+
+###  http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Airport003
+:Airport003 rdf:type owl:NamedIndividual ,
+                     :Airport ;
+            :airportName "Doha" ;
+            rdfs:comment "This instance represents the airport of Doha"@en ;
+            rdfs:label "Airport 003"@en .
+
+
+###  http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Country001
+:Country001 rdf:type owl:NamedIndividual ,
+                     :Country ;
+            :countryName "United Kingdom" ;
+            rdfs:comment "This instance represents the country of United Kingdom" ;
+            rdfs:label "Country 001"@en .
+
+
+###  http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Country002
+:Country002 rdf:type owl:NamedIndividual ,
+                     :Country ;
+            :countryName "Qatar" ;
+            rdfs:comment "This instance represents the country of Qatar."@en ;
+            rdfs:label "Country 002"@en .
+
+
+###  http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Flight001
+:Flight001 rdf:type owl:NamedIndividual ,
+                    :Flight ;
+           :hasDestination :Airport002 ;
+           :hasOrigin :Airport001 ;
+           :hasStopOver :Airport003 ;
+           :flightDate "2024-03-02" ;
+           rdfs:comment "This is the instance of the flight of Mary Le"@en ;
+           rdfs:label "Flight 001"@en .
+
+
+###  http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Flight002
+:Flight002 rdf:type owl:NamedIndividual ,
+                    :Flight ;
+           :hasDestination :Airport003 ;
+           :hasOrigin :Airport001 ;
+           :hasVehicle :Aircraft002 ;
+           :flightDate "2024-02-25" ;
+           rdfs:comment "This is the instance of flight of Alwaleed Althani"@en ;
+           rdfs:label "Flight 002"@en .
+
+
+###  http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Passenger001
+:Passenger001 rdf:type owl:NamedIndividual ,
+                       :Passenger ;
+              :isFrom :Country001 ;
+              :personName "Mary Le" ;
+              rdfs:comment "This is the instance of the passenger named Mary Le."@en ;
+              rdfs:label "Passenger 001"@en .
+
+
+###  http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Passenger002
+:Passenger002 rdf:type owl:NamedIndividual ,
+                       :Passenger ;
+              :isFrom :Country002 ;
+              :personName "Alwaleed Althani" ;
+              rdfs:comment "This is the instance of the passenger named Alwaleed Althani"@en ;
+              rdfs:label "Passenger 002"@en .
+
+
+###  http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Review001
+:Review001 rdf:type owl:NamedIndividual ,
+                    :EconomyClass ,
+                    :NotRecommended ,
+                    :NotVerified ,
+                    :Review ,
+                    :SoloLeisure ;
+           :hasReviewed :Flight001 ;
+           :isAnsweredBy :Passenger001 ;
+           :reviewComment "The delay of my flight from Haneda to Doha caused a bit of chaos upon arrival. Despite my efforts to reach the gate promptly, I was denied boarding due to luggage issues, and the lack of assistance added to the frustration. I paid for an Economy Comfort package, which was supposed to include an aisle seat. However, upon boarding, I was informed that no aisle seats were available, despite assurances beforehand. Additionally, my luggage tag was lost during the boarding pass exchange, leading to further uncertainty upon arrival in London. What was meant to be a 19-hour journey turned into a 27-hour ordeal. When I requested assistance from staff regarding a re-arrangement they promised to get back to me within 5-10 minutes, but no one followed up until I reached out again. The security queue at Heathrow on departure from the UK was incredibly long, with a wait time of about 1.5 hours just to get through. Overall, while the crew onboard was courteous and provided great service, the experience was marred by these inconveniences." ;
+           :reviewDate "2024-03-02" ;
+           :reviewRatingValue "1.0"^^xsd:float ;
+           :reviewTitle "marred by inconveniences" ;
+           rdfs:comment "This is the instance of the review answered by Mary Le"@en ;
+           rdfs:label "Review 001"@en .
+
+
+###  http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Review002
+:Review002 rdf:type owl:NamedIndividual ,
+                    :CoupleLeisure ,
+                    :FirstClass ,
+                    :Review ,
+                    :UnknownRecommended ,
+                    :Verified ;
+           :hasReviewed :Flight002 ;
+           :isAnsweredBy :Passenger002 ;
+           :reviewComment "We flew on probably the first A380 the airline received but it’s up keep is very good the caviar was excellent and the rack of lamb was perfect the entertainment system though the screens were huge and not very cooperative it is very dated as for WiFi was bad to say the least. The seating in First Class was good and the toilets are huge I hope they update the A380." ;
+           :reviewDate "2024-02-25" ;
+           :reviewRatingValue "10.0"^^xsd:float ;
+           :reviewTitle "I hope they update the A380" ;
+           rdfs:comment "This is the instance of the review answered by Alwaleed Althani"@en ;
+           rdfs:label "Review 002"@en .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Business
+                :CoupleLeisure
+                :FamilyLeisure
+                :SoloLeisure
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :BusinessClass
+                :EconomyClass
+                :FirstClass
+                :PremiumClass
+              )
+] .
+
+
+#################################################################
+#    Rules
+#################################################################
+
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings/f> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings/a> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings/p> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings/r> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings/v> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "This rule is used to classify instances of Flight as either DirectFlight or TransitFlight within the ontology" ;
+   rdfs:label "RULE005" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Flight ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings/f>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasStopOver ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings/f> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings/a>
+                                                                ] ;
+                                                      rdf:rest rdf:nil
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :TransitFlight ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings/f>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "This rule is used to classify instances of Passenger as either Satisfied or NotSatisfied based on their reviews within the ontology:" ;
+   rdfs:label "RULE004" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Passenger ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings/p>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasAnswered ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings/p> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings/r>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#classPredicate> :BadReview ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings/r>
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :NotSatisfiedPassenger ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings/p>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "This rule is used to classify instances of Passenger as either Satisfied or NotSatisfied based on their reviews within the ontology:" ;
+   rdfs:label "RULE003" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Passenger ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings/p>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasAnswered ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings/p> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings/r>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#classPredicate> :GoodReview ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings/r>
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :SatisfiedPassenger ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings/p>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "This rule is used to classify the instances of review that has a reviewRatingValue greater or equal than 5" ;
+   rdfs:label "RULE001" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Review ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings/r>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :reviewRatingValue ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings/r> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings/v>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThanOrEqual> ;
+                                                                             <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                          rdf:first <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings/v> ;
+                                                                                                                          rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first 5 ;
+                                                                                                                                     rdf:rest rdf:nil
+                                                                                                                                   ]
+                                                                                                                        ]
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :GoodReview ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings/r>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "This rule is used to classify the instances of review that has a reviewRatingValue less than 5" ;
+   rdfs:label "RULE002" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Review ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings/r>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :reviewRatingValue ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings/r> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings/v>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#lessThan> ;
+                                                                             <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                          rdf:first <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings/v> ;
+                                                                                                                          rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first 5 ;
+                                                                                                                                     rdf:rest rdf:nil
+                                                                                                                                   ]
+                                                                                                                        ]
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :BadReview ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings/r>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
