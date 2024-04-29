@@ -1,0 +1,1780 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Airport"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#hasDestination"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid10",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#onDatatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ],
+  "http://www.w3.org/2002/07/owl#withRestrictions" : [ {
+    "@list" : [ {
+      "@id" : "_:genid12"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid12",
+  "http://www.w3.org/2001/XMLSchema#minInclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "0.0"
+  } ]
+}, {
+  "@id" : "_:genid13",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#reviewRatingValue"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid14"
+  } ]
+}, {
+  "@id" : "_:genid14",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#onDatatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ],
+  "http://www.w3.org/2002/07/owl#withRestrictions" : [ {
+    "@list" : [ {
+      "@id" : "_:genid16"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid16",
+  "http://www.w3.org/2001/XMLSchema#maxInclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "10.0"
+  } ]
+}, {
+  "@id" : "_:genid17",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Business"
+    }, {
+      "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#CoupleLeisure"
+    }, {
+      "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#FamilyLeisure"
+    }, {
+      "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#SoloLeisure"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Airport"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#hasOrigin"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid22",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#BusinessClass"
+    }, {
+      "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#EconomyClass"
+    }, {
+      "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#FirstClass"
+    }, {
+      "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#PremiumClass"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid27",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This rule is used to classify instances of Flight as either DirectFlight or TransitFlight within the ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "RULE005"
+  } ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid31"
+    }, {
+      "@id" : "_:genid29"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid33"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid29",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings/f"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings/a"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#hasStopOver"
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Aircraft"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#hasVehicle"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid31",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings/f"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Flight"
+  } ]
+}, {
+  "@id" : "_:genid33",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings/f"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#TransitFlight"
+  } ]
+}, {
+  "@id" : "_:genid34",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This rule is used to classify instances of Passenger as either Satisfied or NotSatisfied based on their reviews within the ontology:"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "RULE004"
+  } ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid40"
+    }, {
+      "@id" : "_:genid38"
+    }, {
+      "@id" : "_:genid36"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid42"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid36",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings/r"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#BadReview"
+  } ]
+}, {
+  "@id" : "_:genid38",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings/p"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings/r"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#hasAnswered"
+  } ]
+}, {
+  "@id" : "_:genid4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Review"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#hasAnswered"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid40",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings/p"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Passenger"
+  } ]
+}, {
+  "@id" : "_:genid42",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings/p"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#NotSatisfiedPassenger"
+  } ]
+}, {
+  "@id" : "_:genid43",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This rule is used to classify instances of Passenger as either Satisfied or NotSatisfied based on their reviews within the ontology:"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "RULE003"
+  } ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid49"
+    }, {
+      "@id" : "_:genid47"
+    }, {
+      "@id" : "_:genid45"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid51"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid45",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings/r"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#GoodReview"
+  } ]
+}, {
+  "@id" : "_:genid47",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings/p"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings/r"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#hasAnswered"
+  } ]
+}, {
+  "@id" : "_:genid49",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings/p"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Passenger"
+  } ]
+}, {
+  "@id" : "_:genid5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Country"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#isFrom"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid51",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings/p"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#SatisfiedPassenger"
+  } ]
+}, {
+  "@id" : "_:genid52",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This rule is used to classify the instances of review that has a reviewRatingValue greater or equal than 5"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "RULE001"
+  } ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid60"
+    }, {
+      "@id" : "_:genid58"
+    }, {
+      "@id" : "_:genid54"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid62"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid54",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
+  "http://www.w3.org/2003/11/swrl#arguments" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings/v"
+    }, {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "5"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#builtin" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"
+  } ]
+}, {
+  "@id" : "_:genid58",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings/r"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings/v"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#reviewRatingValue"
+  } ]
+}, {
+  "@id" : "_:genid6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#personName"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid60",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings/r"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Review"
+  } ]
+}, {
+  "@id" : "_:genid62",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings/r"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#GoodReview"
+  } ]
+}, {
+  "@id" : "_:genid63",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This rule is used to classify the instances of review that has a reviewRatingValue less than 5"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "RULE002"
+  } ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid71"
+    }, {
+      "@id" : "_:genid69"
+    }, {
+      "@id" : "_:genid65"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid73"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid65",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
+  "http://www.w3.org/2003/11/swrl#arguments" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings/v"
+    }, {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "5"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#builtin" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrlb#lessThan"
+  } ]
+}, {
+  "@id" : "_:genid69",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings/r"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings/v"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#reviewRatingValue"
+  } ]
+}, {
+  "@id" : "_:genid7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Flight"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#hasReviewed"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid71",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings/r"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Review"
+  } ]
+}, {
+  "@id" : "_:genid73",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings/r"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#BadReview"
+  } ]
+}, {
+  "@id" : "_:genid8",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Passenger"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#isAnsweredBy"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid9",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#reviewRatingValue"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid10"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@language" : "en",
+    "@value" : "Copyright 2024 Martí Masot Serrano\n\n\n\nLicensed under the Apache License, Version 2.0 (the \"License\");\n\nyou may not use this file except in compliance with the License.\n\nYou may obtain a copy of the License at\n\n\n\n    http://www.apache.org/licenses/LICENSE-2.0\n\n\n\nUnless required by applicable law or agreed to in writing, software\n\ndistributed under the License is distributed on an \"AS IS\" BASIS,\n\nWITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n\nSee the License for the specific language governing permissions and\n\nlimitations under the License."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This ontology is designed to infer passenger satisfaction with flights, providing a framework for evaluating their experiences and perceptions. It serves as a practical application within the field of Knowledge Representation, as taught in the course offered by UOC (Universitat Oberta de Catalunya), known as 'Representation of Knowledge'."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "OntoFlightRatings"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Aircraft",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class represents the aircraft that operate the flight within the ontology."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Aircraft"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#sameAs" : [ {
+    "@language" : "en",
+    "@value" : "https://dbpedia.org/ontology/Aircraft"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Aircraft001",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#aircraftBrand" : [ {
+    "@value" : "Boeing"
+  } ],
+  "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#aircraftModel" : [ {
+    "@value" : "747"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Aircraft"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This instance represents a Boeing 747"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Aircraft 001"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Aircraft002",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#aircraftBrand" : [ {
+    "@value" : "A380"
+  } ],
+  "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#aircraftModel" : [ {
+    "@value" : "800"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Aircraft"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This instance represents an A380 aircraft."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Aircraft 002"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Airport",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This location represents an airport within the ontology."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Airport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#sameAs" : [ {
+    "@language" : "en",
+    "@value" : "https://dbpedia.org/ontology/Airport"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Country"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Airport001",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#airportName" : [ {
+    "@value" : "Tokyo"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Airport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This instance is used to represent the airport of Tokyo."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Airport 001"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Airport002",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#airportName" : [ {
+    "@value" : "London Heathrow"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Airport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This instance is used to represents the airport of London Heathrow."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Airport 002"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Airport003",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#airportName" : [ {
+    "@value" : "Doha"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Airport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This instance represents the airport of Doha"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Airport 003"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#BadReview",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class is used to classify a review as \"bad\" within the ontology, based on the rating value or recommendation provided by the passenger."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "BadReview"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#TypeOfReview"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#GoodReview"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Business",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class represents a subclass within the ontology, specifically categorizing passengers who travel for business purposes."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Business"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#PassengerType"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#BusinessClass",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class represents the seat type of business class within the ontology."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Business Class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#SeatType"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Country",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This location represents a country within the ontology."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Country"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#sameAs" : [ {
+    "@language" : "en",
+    "@value" : "https://dbpedia.org/ontology/Country"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Country001",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#countryName" : [ {
+    "@value" : "United Kingdom"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Country"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This instance represents the country of United Kingdom"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Country 001"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Country002",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#countryName" : [ {
+    "@value" : "Qatar"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Country"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This instance represents the country of Qatar."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Country 002"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#CoupleLeisure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class represents a subclass within the ontology, specifically categorizing passengers who travel as a couple for leisure purposes."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Couple Leisure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#PassengerType"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#EconomyClass",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class represents the seat type of economy class within the ontology."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Economy Class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#SeatType"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#FamilyLeisure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class represents a subclass within the ontology, specifically categorizing passengers who travel as a family for leisure purposes."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Family Leisure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#PassengerType"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#FirstClass",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class represents the seat type of first class within the ontology."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "First Class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#SeatType"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Flight",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class represents a flight and its associated information within the ontology. It serves as a comprehensive container for various attributes and relationships related to a specific flight instance. These attributes may include the airport of origin and destinations, reviews provided by passengers who experienced the flight, the aircraft assigned to operate the flight."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Flight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid1"
+  }, {
+    "@id" : "_:genid2"
+  }, {
+    "@id" : "_:genid3"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Flight001",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#flightDate" : [ {
+    "@value" : "2024-03-02"
+  } ],
+  "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#hasDestination" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Airport002"
+  } ],
+  "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#hasOrigin" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Airport001"
+  } ],
+  "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#hasStopOver" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Airport003"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Flight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This is the instance of the flight of Mary Le"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Flight 001"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Flight002",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#flightDate" : [ {
+    "@value" : "2024-02-25"
+  } ],
+  "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#hasDestination" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Airport003"
+  } ],
+  "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#hasOrigin" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Airport001"
+  } ],
+  "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#hasVehicle" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Aircraft002"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Flight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This is the instance of flight of Alwaleed Althani"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Flight 002"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#GoodReview",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class is used to classify a review as \"good\" within the ontology, based on the rating value or recommendation provided by the passenger."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "GoodReview"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#TypeOfReview"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#NotRecommended",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class is used to classify a review when the passenger does not recommend the flight within the ontology."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Not Recommended"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Recommendation"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Recommended"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#NotSatisfiedPassenger",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class represents a dissatisfied passenger."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "DissatisfiedPassenger"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Passenger"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#SatisfiedPassenger"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#NotVerified",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class is used to represent when a user's review of a flight is unverified within the ontology."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Not Verified"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Verification"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Verified"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Passenger",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This is a class that represents a passenger who takes a flight and subsequently provides a review. Within this class, passengers can be classified as either satisfied or dissatisfied with the service."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Passenger"
+  }, {
+    "@language" : "en",
+    "@value" : "Person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid4"
+  }, {
+    "@id" : "_:genid5"
+  }, {
+    "@id" : "_:genid6"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Passenger001",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#isFrom" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Country001"
+  } ],
+  "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#personName" : [ {
+    "@value" : "Mary Le"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Passenger"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This is the instance of the passenger named Mary Le."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Passenger 001"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Passenger002",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#isFrom" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Country002"
+  } ],
+  "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#personName" : [ {
+    "@value" : "Alwaleed Althani"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Passenger"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This is the instance of the passenger named Alwaleed Althani"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Passenger 002"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#PassengerType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class is designed to classify the composition of the passenger group based on their travel circumstances within the ontology. It serves as a categorization for identifying whether passengers traveled for business purposes, with family members, alone, or as a couple."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Passenger Type"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Review"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#PremiumClass",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class represents the seat type of premium class within the ontology."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Premium Class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#SeatType"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Recommendation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class is used to classify whether a user recommends or does not recommend a flight in a review within the ontology."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Recommendation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Review"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Recommended",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class is used to classify a review when the passenger does recommend the flight within the ontology."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Recommended"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Recommendation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Review",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class represents the review answered by a passenger about a flight within the ontology. It serves as a container for feedback provided by passengers regarding their flight experiences. This class includes subclasses to classify the review based on various factors, such as the class of service (e.g., Business class, Economy class), the composition of the passenger group (e.g., solo traveler, family, business group), and any other relevant categorizations."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Review"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid7"
+  }, {
+    "@id" : "_:genid8"
+  }, {
+    "@id" : "_:genid9"
+  }, {
+    "@id" : "_:genid13"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Review001",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#hasReviewed" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Flight001"
+  } ],
+  "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#isAnsweredBy" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Passenger001"
+  } ],
+  "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#reviewComment" : [ {
+    "@value" : "The delay of my flight from Haneda to Doha caused a bit of chaos upon arrival. Despite my efforts to reach the gate promptly, I was denied boarding due to luggage issues, and the lack of assistance added to the frustration. I paid for an Economy Comfort package, which was supposed to include an aisle seat. However, upon boarding, I was informed that no aisle seats were available, despite assurances beforehand. Additionally, my luggage tag was lost during the boarding pass exchange, leading to further uncertainty upon arrival in London. What was meant to be a 19-hour journey turned into a 27-hour ordeal. When I requested assistance from staff regarding a re-arrangement they promised to get back to me within 5-10 minutes, but no one followed up until I reached out again. The security queue at Heathrow on departure from the UK was incredibly long, with a wait time of about 1.5 hours just to get through. Overall, while the crew onboard was courteous and provided great service, the experience was marred by these inconveniences."
+  } ],
+  "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#reviewDate" : [ {
+    "@value" : "2024-03-02"
+  } ],
+  "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#reviewRatingValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "1.0"
+  } ],
+  "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#reviewTitle" : [ {
+    "@value" : "marred by inconveniences"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#EconomyClass"
+  }, {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#NotRecommended"
+  }, {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#NotVerified"
+  }, {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Review"
+  }, {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#SoloLeisure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This is the instance of the review answered by Mary Le"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Review 001"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Review002",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#hasReviewed" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Flight002"
+  } ],
+  "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#isAnsweredBy" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Passenger002"
+  } ],
+  "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#reviewComment" : [ {
+    "@value" : "We flew on probably the first A380 the airline received but it’s up keep is very good the caviar was excellent and the rack of lamb was perfect the entertainment system though the screens were huge and not very cooperative it is very dated as for WiFi was bad to say the least. The seating in First Class was good and the toilets are huge I hope they update the A380."
+  } ],
+  "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#reviewDate" : [ {
+    "@value" : "2024-02-25"
+  } ],
+  "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#reviewRatingValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "10.0"
+  } ],
+  "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#reviewTitle" : [ {
+    "@value" : "I hope they update the A380"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#CoupleLeisure"
+  }, {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#FirstClass"
+  }, {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Review"
+  }, {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#UnknownRecommended"
+  }, {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Verified"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This is the instance of the review answered by Alwaleed Althani"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Review 002"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#SatisfiedPassenger",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class represents a satisfied passenger."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "SatisfiedPassenger"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Passenger"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#SeatType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class is used to classify the seating location of a passenger who is responding to the review within the ontology."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Seat Type"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Review"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#SoloLeisure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class represents a subclass within the ontology, specifically categorizing passengers who travel solo for leisure purposes."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Solo Leisure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#PassengerType"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#TransitFlight",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class is used to classify a Flight within the ontology, indicating that it has a stopover airport."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "TransitFlight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Flight"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#TypeOfReview",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class is used to classify a review as either a good or bad review within the ontology, based on the rating or recommendation provided by the review of the passenger."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Type Of Review"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Review"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#UnknownRecommended",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class is used to classify a review when the recommendation of the passenger is unknown."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Unknown Recommended"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Recommendation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Verification",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class is used to represent whether a review has been verified within the ontology."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Verification"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Review"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Verified",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class is used to represent when a user's review of a flight is verified within the ontology."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Verified"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Verification"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#aircraftBrand",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This data property is used to store the brand of the aircraft."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Aircraft"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Aircraft Brand"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#aircraftModel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This data property is used to store the model of the aircraft"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Aircraft"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Aircraft Model"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#airportName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This data property is used to store the airport name"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Airport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Airport Name"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#countryName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This data property is used to store the name of the country"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Country"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Country Name"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#flightDate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This data property is used to store the date of the flight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Flight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Flight Date"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#hasAnswered",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This property is used to relate a passenger who has answered a review within the ontology."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Passenger"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has Answered"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Review"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#isAnsweredBy"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#hasDestination",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This property is used to relate a flight entity with the destination airport within the ontology. It serves as a means of establishing a relationship between a specific flight instance and the airport entity representing its destination."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Flight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has Destination"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Airport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#isDestinationOf"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#hasFrom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This property is the inverse of isFrom"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Country"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has From"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Passenger"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#isFrom"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#hasOrigin",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This property is used to relate a flight entity with the origin airport within the ontology. It serves as a means of establishing a relationship between a specific flight instance and the airport entity representing its point of origin."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Flight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has Origin"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Airport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#isOriginOf"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#hasReviewed",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This property is used to relate a review with the flight it evaluates within the ontology."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Review"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "hasReviewed"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Flight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#isReviewedBy"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#hasStopOver",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This property is used to relate a flight within an airport, reflecting that the flight has a stopover and the airport is where the passenger made the stopover."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Flight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "hasStopOver"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Airport"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#isStopOverOf"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#hasVehicle",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This property is used to relate the classes Flight and Aircraft within the ontology, indicating that the aircraft is used to operate the flight."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Flight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has Vehicle"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Aircraft"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#isVehicleOf"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#isAnsweredBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Inverse property of hasAnswered."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Review"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is Answered By"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Passenger"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#isDestinationOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Inverse property of hasDestination"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Airport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is Destination Of"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Flight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#isFrom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This property is used to relate a passenger with the country from which they originate within the ontology. It serves as a means of establishing a relationship between a passenger individual and the country entity representing their place of origin."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Passenger"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is From"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Country"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#isOriginOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Inverse property of hasOrigin."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Airport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is Origin Of"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Flight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#isReviewedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Is the inverse of hasReviewed"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Flight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is Reviewed By"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Review"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#isStopOverOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This is the inverse of has StopOver."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Airport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is StopOver Of"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Flight"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#isVehicleOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This property is the inverse of has Vehicle"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Aircraft"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is Vehicle"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Flight"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#personName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This data property is used to store the name of a passenger."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Passenger"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Person Name"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#reviewComment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This data property is used to store the comment of a review."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Review"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Review Comment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#reviewDate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This data property is used to store the date of a review"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Review"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Review Date"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#reviewRatingValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This data property is used to store the value of the rating of a Review about a Flight."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Review"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Review Rating Value"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#reviewTitle",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This data property is used to store the title of a review."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Review"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Review Title"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings/a",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings/f",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings/p",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings/r",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings/v",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "http://www.w3.org/2000/01/rdf-schema#sameAs",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2003/11/swrlb#greaterThanOrEqual",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Builtin" ]
+}, {
+  "@id" : "http://www.w3.org/2003/11/swrlb#lessThan",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Builtin" ]
+} ]

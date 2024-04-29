@@ -1,0 +1,29 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "ontoFlightRatings:Review" "ontoFlightRatings:Verification" "ontoFlightRatings:Recommended" "ontoFlightRatings:NotRecommended" "ontoFlightRatings:NotSatisfiedPassenger" "ontoFlightRatings:Verified" "ontoFlightRatings:UnknownRecommended" "ontoFlightRatings:SeatType" "ontoFlightRatings:SatisfiedPassenger" "ontoFlightRatings:FirstClass" "ontoFlightRatings:SoloLeisure" "ontoFlightRatings:CoupleLeisure" "ontoFlightRatings:TransitFlight" "ontoFlightRatings:Business" "ontoFlightRatings:BadReview" "ontoFlightRatings:Passenger" "ontoFlightRatings:PremiumClass" "ontoFlightRatings:EconomyClass" "ontoFlightRatings:BusinessClass" "ontoFlightRatings:Flight" "ontoFlightRatings:PassengerType" "ontoFlightRatings:NotVerified" "ontoFlightRatings:GoodReview" "ontoFlightRatings:Recommendation" "ontoFlightRatings:TypeOfReview" "ontoFlightRatings:FamilyLeisure" ; /*classes style*/
+	"ontoFlightRatings:FirstClass" -> "ontoFlightRatings:SeatType" [ label = "rdfs:subClassOf" ];
+	"ontoFlightRatings:SeatType" -> "ontoFlightRatings:Review" [ label = "rdfs:subClassOf" ];
+	"ontoFlightRatings:BadReview" -> "ontoFlightRatings:TypeOfReview" [ label = "rdfs:subClassOf" ];
+	"ontoFlightRatings:CoupleLeisure" -> "ontoFlightRatings:PassengerType" [ label = "rdfs:subClassOf" ];
+	"ontoFlightRatings:SatisfiedPassenger" -> "ontoFlightRatings:Passenger" [ label = "rdfs:subClassOf" ];
+	"ontoFlightRatings:SoloLeisure" -> "ontoFlightRatings:PassengerType" [ label = "rdfs:subClassOf" ];
+	"ontoFlightRatings:Business" -> "ontoFlightRatings:PassengerType" [ label = "rdfs:subClassOf" ];
+	"ontoFlightRatings:Verified" -> "ontoFlightRatings:Verification" [ label = "rdfs:subClassOf" ];
+	"ontoFlightRatings:NotSatisfiedPassenger" -> "ontoFlightRatings:Passenger" [ label = "rdfs:subClassOf" ];
+	"ontoFlightRatings:TypeOfReview" -> "ontoFlightRatings:Review" [ label = "rdfs:subClassOf" ];
+	"ontoFlightRatings:NotVerified" -> "ontoFlightRatings:Verification" [ label = "rdfs:subClassOf" ];
+	"ontoFlightRatings:Recommendation" -> "ontoFlightRatings:Review" [ label = "rdfs:subClassOf" ];
+	"ontoFlightRatings:TransitFlight" -> "ontoFlightRatings:Flight" [ label = "rdfs:subClassOf" ];
+	"ontoFlightRatings:PremiumClass" -> "ontoFlightRatings:SeatType" [ label = "rdfs:subClassOf" ];
+	"ontoFlightRatings:EconomyClass" -> "ontoFlightRatings:SeatType" [ label = "rdfs:subClassOf" ];
+	"ontoFlightRatings:NotRecommended" -> "ontoFlightRatings:Recommendation" [ label = "rdfs:subClassOf" ];
+	"ontoFlightRatings:Verification" -> "ontoFlightRatings:Review" [ label = "rdfs:subClassOf" ];
+	"ontoFlightRatings:Recommended" -> "ontoFlightRatings:Recommendation" [ label = "rdfs:subClassOf" ];
+	"ontoFlightRatings:BusinessClass" -> "ontoFlightRatings:SeatType" [ label = "rdfs:subClassOf" ];
+	"ontoFlightRatings:UnknownRecommended" -> "ontoFlightRatings:Recommendation" [ label = "rdfs:subClassOf" ];
+	"ontoFlightRatings:FamilyLeisure" -> "ontoFlightRatings:PassengerType" [ label = "rdfs:subClassOf" ];
+	"ontoFlightRatings:PassengerType" -> "ontoFlightRatings:Review" [ label = "rdfs:subClassOf" ];
+	"ontoFlightRatings:GoodReview" -> "ontoFlightRatings:TypeOfReview" [ label = "rdfs:subClassOf" ];
+
+}
