@@ -1,0 +1,826 @@
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings> <http://purl.org/dc/terms/license> "Copyright 2024 Martí Masot Serrano\n\n\n\nLicensed under the Apache License, Version 2.0 (the \"License\");\n\nyou may not use this file except in compliance with the License.\n\nYou may obtain a copy of the License at\n\n\n\n    http://www.apache.org/licenses/LICENSE-2.0\n\n\n\nUnless required by applicable law or agreed to in writing, software\n\ndistributed under the License is distributed on an \"AS IS\" BASIS,\n\nWITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n\nSee the License for the specific language governing permissions and\n\nlimitations under the License."@en .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings> <http://www.w3.org/2000/01/rdf-schema#comment> "This ontology is designed to infer passenger satisfaction with flights, providing a framework for evaluating their experiences and perceptions. It serves as a practical application within the field of Knowledge Representation, as taught in the course offered by UOC (Universitat Oberta de Catalunya), known as 'Representation of Knowledge'."@en .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings> <http://www.w3.org/2000/01/rdf-schema#label> "OntoFlightRatings" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
+<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#sameAs
+<http://www.w3.org/2000/01/rdf-schema#sameAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#hasAnswered
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#hasAnswered> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#hasAnswered> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#hasAnswered> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#isAnsweredBy> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#hasAnswered> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Passenger> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#hasAnswered> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Review> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#hasAnswered> <http://www.w3.org/2000/01/rdf-schema#comment> "This property is used to relate a passenger who has answered a review within the ontology."@en .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#hasAnswered> <http://www.w3.org/2000/01/rdf-schema#label> "has Answered"@en .
+# 
+# http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#hasDestination
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#hasDestination> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#hasDestination> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#hasDestination> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#isDestinationOf> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#hasDestination> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Flight> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#hasDestination> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Airport> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#hasDestination> <http://www.w3.org/2000/01/rdf-schema#comment> "This property is used to relate a flight entity with the destination airport within the ontology. It serves as a means of establishing a relationship between a specific flight instance and the airport entity representing its destination."@en .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#hasDestination> <http://www.w3.org/2000/01/rdf-schema#label> "has Destination"@en .
+# 
+# http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#hasFrom
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#hasFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#hasFrom> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#isFrom> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#hasFrom> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Country> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#hasFrom> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Passenger> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#hasFrom> <http://www.w3.org/2000/01/rdf-schema#comment> "This property is the inverse of isFrom"@en .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#hasFrom> <http://www.w3.org/2000/01/rdf-schema#label> "has From"@en .
+# 
+# http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#hasOrigin
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#hasOrigin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#hasOrigin> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#hasOrigin> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#isOriginOf> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#hasOrigin> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Flight> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#hasOrigin> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Airport> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#hasOrigin> <http://www.w3.org/2000/01/rdf-schema#comment> "This property is used to relate a flight entity with the origin airport within the ontology. It serves as a means of establishing a relationship between a specific flight instance and the airport entity representing its point of origin."@en .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#hasOrigin> <http://www.w3.org/2000/01/rdf-schema#label> "has Origin"@en .
+# 
+# http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#hasReviewed
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#hasReviewed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#hasReviewed> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#hasReviewed> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#isReviewedBy> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#hasReviewed> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Review> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#hasReviewed> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Flight> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#hasReviewed> <http://www.w3.org/2000/01/rdf-schema#comment> "This property is used to relate a review with the flight it evaluates within the ontology."@en .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#hasReviewed> <http://www.w3.org/2000/01/rdf-schema#label> "hasReviewed"@en .
+# 
+# http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#hasStopOver
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#hasStopOver> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#hasStopOver> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#isStopOverOf> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#hasStopOver> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Flight> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#hasStopOver> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Airport> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#hasStopOver> <http://www.w3.org/2000/01/rdf-schema#comment> "This property is used to relate a flight within an airport, reflecting that the flight has a stopover and the airport is where the passenger made the stopover."@en .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#hasStopOver> <http://www.w3.org/2000/01/rdf-schema#label> "hasStopOver"@en .
+# 
+# http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#hasVehicle
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#hasVehicle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#hasVehicle> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#isVehicleOf> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#hasVehicle> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Flight> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#hasVehicle> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Aircraft> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#hasVehicle> <http://www.w3.org/2000/01/rdf-schema#comment> "This property is used to relate the classes Flight and Aircraft within the ontology, indicating that the aircraft is used to operate the flight."@en .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#hasVehicle> <http://www.w3.org/2000/01/rdf-schema#label> "has Vehicle"@en .
+# 
+# http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#isAnsweredBy
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#isAnsweredBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#isAnsweredBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#isAnsweredBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Review> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#isAnsweredBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Passenger> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#isAnsweredBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse property of hasAnswered."@en .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#isAnsweredBy> <http://www.w3.org/2000/01/rdf-schema#label> "is Answered By"@en .
+# 
+# http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#isDestinationOf
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#isDestinationOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#isDestinationOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#isDestinationOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Airport> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#isDestinationOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Flight> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#isDestinationOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse property of hasDestination"@en .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#isDestinationOf> <http://www.w3.org/2000/01/rdf-schema#label> "is Destination Of"@en .
+# 
+# http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#isFrom
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#isFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#isFrom> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Passenger> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#isFrom> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Country> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#isFrom> <http://www.w3.org/2000/01/rdf-schema#comment> "This property is used to relate a passenger with the country from which they originate within the ontology. It serves as a means of establishing a relationship between a passenger individual and the country entity representing their place of origin."@en .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#isFrom> <http://www.w3.org/2000/01/rdf-schema#label> "is From"@en .
+# 
+# http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#isOriginOf
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#isOriginOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#isOriginOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#isOriginOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Airport> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#isOriginOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Flight> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#isOriginOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse property of hasOrigin."@en .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#isOriginOf> <http://www.w3.org/2000/01/rdf-schema#label> "is Origin Of"@en .
+# 
+# http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#isReviewedBy
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#isReviewedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#isReviewedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#isReviewedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Flight> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#isReviewedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Review> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#isReviewedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Is the inverse of hasReviewed"@en .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#isReviewedBy> <http://www.w3.org/2000/01/rdf-schema#label> "is Reviewed By"@en .
+# 
+# http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#isStopOverOf
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#isStopOverOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#isStopOverOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Airport> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#isStopOverOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Flight> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#isStopOverOf> <http://www.w3.org/2000/01/rdf-schema#comment> "This is the inverse of has StopOver."@en .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#isStopOverOf> <http://www.w3.org/2000/01/rdf-schema#label> "is StopOver Of"@en .
+# 
+# http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#isVehicleOf
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#isVehicleOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#isVehicleOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Aircraft> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#isVehicleOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Flight> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#isVehicleOf> <http://www.w3.org/2000/01/rdf-schema#comment> "This property is the inverse of has Vehicle"@en .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#isVehicleOf> <http://www.w3.org/2000/01/rdf-schema#label> "is Vehicle"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#aircraftBrand
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#aircraftBrand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#aircraftBrand> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#aircraftBrand> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Aircraft> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#aircraftBrand> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#aircraftBrand> <http://www.w3.org/2000/01/rdf-schema#comment> "This data property is used to store the brand of the aircraft."@en .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#aircraftBrand> <http://www.w3.org/2000/01/rdf-schema#label> "Aircraft Brand"@en .
+# 
+# http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#aircraftModel
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#aircraftModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#aircraftModel> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#aircraftModel> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Aircraft> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#aircraftModel> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#aircraftModel> <http://www.w3.org/2000/01/rdf-schema#comment> "This data property is used to store the model of the aircraft"@en .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#aircraftModel> <http://www.w3.org/2000/01/rdf-schema#label> "Aircraft Model"@en .
+# 
+# http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#airportName
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#airportName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#airportName> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#airportName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Airport> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#airportName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#airportName> <http://www.w3.org/2000/01/rdf-schema#comment> "This data property is used to store the airport name"@en .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#airportName> <http://www.w3.org/2000/01/rdf-schema#label> "Airport Name"@en .
+# 
+# http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#countryName
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#countryName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#countryName> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#countryName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Country> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#countryName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#countryName> <http://www.w3.org/2000/01/rdf-schema#comment> "This data property is used to store the name of the country"@en .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#countryName> <http://www.w3.org/2000/01/rdf-schema#label> "Country Name"@en .
+# 
+# http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#flightDate
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#flightDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#flightDate> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#flightDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Flight> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#flightDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#flightDate> <http://www.w3.org/2000/01/rdf-schema#comment> "This data property is used to store the date of the flight"@en .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#flightDate> <http://www.w3.org/2000/01/rdf-schema#label> "Flight Date"@en .
+# 
+# http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#personName
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#personName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#personName> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#personName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Passenger> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#personName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#personName> <http://www.w3.org/2000/01/rdf-schema#comment> "This data property is used to store the name of a passenger."@en .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#personName> <http://www.w3.org/2000/01/rdf-schema#label> "Person Name"@en .
+# 
+# http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#reviewComment
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#reviewComment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#reviewComment> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#reviewComment> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Review> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#reviewComment> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#reviewComment> <http://www.w3.org/2000/01/rdf-schema#comment> "This data property is used to store the comment of a review."@en .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#reviewComment> <http://www.w3.org/2000/01/rdf-schema#label> "Review Comment"@en .
+# 
+# http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#reviewDate
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#reviewDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#reviewDate> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#reviewDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Review> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#reviewDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#reviewDate> <http://www.w3.org/2000/01/rdf-schema#comment> "This data property is used to store the date of a review"@en .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#reviewDate> <http://www.w3.org/2000/01/rdf-schema#label> "Review Date"@en .
+# 
+# http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#reviewRatingValue
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#reviewRatingValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#reviewRatingValue> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#reviewRatingValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Review> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#reviewRatingValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#reviewRatingValue> <http://www.w3.org/2000/01/rdf-schema#comment> "This data property is used to store the value of the rating of a Review about a Flight."@en .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#reviewRatingValue> <http://www.w3.org/2000/01/rdf-schema#label> "Review Rating Value"@en .
+# 
+# http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#reviewTitle
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#reviewTitle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#reviewTitle> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#reviewTitle> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Review> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#reviewTitle> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#reviewTitle> <http://www.w3.org/2000/01/rdf-schema#comment> "This data property is used to store the title of a review."@en .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#reviewTitle> <http://www.w3.org/2000/01/rdf-schema#label> "Review Title"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Aircraft
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Aircraft> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Aircraft> <http://www.w3.org/2000/01/rdf-schema#comment> "This class represents the aircraft that operate the flight within the ontology."@en .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Aircraft> <http://www.w3.org/2000/01/rdf-schema#label> "Aircraft"@en .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Aircraft> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/ontology/Aircraft"@en .
+# 
+# http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Airport
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Airport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Airport> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Country> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Airport> <http://www.w3.org/2000/01/rdf-schema#comment> "This location represents an airport within the ontology."@en .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Airport> <http://www.w3.org/2000/01/rdf-schema#label> "Airport"@en .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Airport> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/ontology/Airport"@en .
+# 
+# http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#BadReview
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#BadReview> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#BadReview> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#TypeOfReview> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#BadReview> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#GoodReview> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#BadReview> <http://www.w3.org/2000/01/rdf-schema#comment> "This class is used to classify a review as \"bad\" within the ontology, based on the rating value or recommendation provided by the passenger."@en .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#BadReview> <http://www.w3.org/2000/01/rdf-schema#label> "BadReview"@en .
+# 
+# http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Business
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Business> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Business> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#PassengerType> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Business> <http://www.w3.org/2000/01/rdf-schema#comment> "This class represents a subclass within the ontology, specifically categorizing passengers who travel for business purposes."@en .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Business> <http://www.w3.org/2000/01/rdf-schema#label> "Business"@en .
+# 
+# http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#BusinessClass
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#BusinessClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#BusinessClass> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#SeatType> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#BusinessClass> <http://www.w3.org/2000/01/rdf-schema#comment> "This class represents the seat type of business class within the ontology."@en .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#BusinessClass> <http://www.w3.org/2000/01/rdf-schema#label> "Business Class"@en .
+# 
+# http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Country
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Country> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Country> <http://www.w3.org/2000/01/rdf-schema#comment> "This location represents a country within the ontology."@en .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Country> <http://www.w3.org/2000/01/rdf-schema#label> "Country"@en .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Country> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/ontology/Country"@en .
+# 
+# http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#CoupleLeisure
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#CoupleLeisure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#CoupleLeisure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#PassengerType> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#CoupleLeisure> <http://www.w3.org/2000/01/rdf-schema#comment> "This class represents a subclass within the ontology, specifically categorizing passengers who travel as a couple for leisure purposes."@en .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#CoupleLeisure> <http://www.w3.org/2000/01/rdf-schema#label> "Couple Leisure"@en .
+# 
+# http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#EconomyClass
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#EconomyClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#EconomyClass> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#SeatType> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#EconomyClass> <http://www.w3.org/2000/01/rdf-schema#comment> "This class represents the seat type of economy class within the ontology."@en .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#EconomyClass> <http://www.w3.org/2000/01/rdf-schema#label> "Economy Class"@en .
+# 
+# http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#FamilyLeisure
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#FamilyLeisure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#FamilyLeisure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#PassengerType> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#FamilyLeisure> <http://www.w3.org/2000/01/rdf-schema#comment> "This class represents a subclass within the ontology, specifically categorizing passengers who travel as a family for leisure purposes."@en .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#FamilyLeisure> <http://www.w3.org/2000/01/rdf-schema#label> "Family Leisure"@en .
+# 
+# http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#FirstClass
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#FirstClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#FirstClass> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#SeatType> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#FirstClass> <http://www.w3.org/2000/01/rdf-schema#comment> "This class represents the seat type of first class within the ontology."@en .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#FirstClass> <http://www.w3.org/2000/01/rdf-schema#label> "First Class"@en .
+# 
+# http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Flight
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Flight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Flight> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Airport> .
+_:genid1 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#hasDestination> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Flight> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Airport> .
+_:genid2 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#hasOrigin> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Flight> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
+_:genid3 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Aircraft> .
+_:genid3 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#hasVehicle> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Flight> <http://www.w3.org/2000/01/rdf-schema#comment> "This class represents a flight and its associated information within the ontology. It serves as a comprehensive container for various attributes and relationships related to a specific flight instance. These attributes may include the airport of origin and destinations, reviews provided by passengers who experienced the flight, the aircraft assigned to operate the flight."@en .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Flight> <http://www.w3.org/2000/01/rdf-schema#label> "Flight"@en .
+# 
+# http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#GoodReview
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#GoodReview> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#GoodReview> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#TypeOfReview> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#GoodReview> <http://www.w3.org/2000/01/rdf-schema#comment> "This class is used to classify a review as \"good\" within the ontology, based on the rating value or recommendation provided by the passenger."@en .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#GoodReview> <http://www.w3.org/2000/01/rdf-schema#label> "GoodReview"@en .
+# 
+# http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#NotRecommended
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#NotRecommended> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#NotRecommended> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Recommendation> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#NotRecommended> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Recommended> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#NotRecommended> <http://www.w3.org/2000/01/rdf-schema#comment> "This class is used to classify a review when the passenger does not recommend the flight within the ontology."@en .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#NotRecommended> <http://www.w3.org/2000/01/rdf-schema#label> "Not Recommended"@en .
+# 
+# http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#NotSatisfiedPassenger
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#NotSatisfiedPassenger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#NotSatisfiedPassenger> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Passenger> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#NotSatisfiedPassenger> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#SatisfiedPassenger> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#NotSatisfiedPassenger> <http://www.w3.org/2000/01/rdf-schema#comment> "This class represents a dissatisfied passenger."@en .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#NotSatisfiedPassenger> <http://www.w3.org/2000/01/rdf-schema#label> "DissatisfiedPassenger"@en .
+# 
+# http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#NotVerified
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#NotVerified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#NotVerified> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Verification> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#NotVerified> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Verified> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#NotVerified> <http://www.w3.org/2000/01/rdf-schema#comment> "This class is used to represent when a user's review of a flight is unverified within the ontology."@en .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#NotVerified> <http://www.w3.org/2000/01/rdf-schema#label> "Not Verified"@en .
+# 
+# http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Passenger
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Passenger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Passenger> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
+_:genid4 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Review> .
+_:genid4 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#hasAnswered> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Passenger> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
+_:genid5 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Country> .
+_:genid5 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#isFrom> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Passenger> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid6 .
+_:genid6 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid6 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#personName> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Passenger> <http://www.w3.org/2000/01/rdf-schema#comment> "This is a class that represents a passenger who takes a flight and subsequently provides a review. Within this class, passengers can be classified as either satisfied or dissatisfied with the service."@en .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Passenger> <http://www.w3.org/2000/01/rdf-schema#label> "Passenger"@en .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Passenger> <http://www.w3.org/2000/01/rdf-schema#label> "Person"@en .
+# 
+# http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#PassengerType
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#PassengerType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#PassengerType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Review> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#PassengerType> <http://www.w3.org/2000/01/rdf-schema#comment> "This class is designed to classify the composition of the passenger group based on their travel circumstances within the ontology. It serves as a categorization for identifying whether passengers traveled for business purposes, with family members, alone, or as a couple."@en .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#PassengerType> <http://www.w3.org/2000/01/rdf-schema#label> "Passenger Type"@en .
+# 
+# http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#PremiumClass
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#PremiumClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#PremiumClass> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#SeatType> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#PremiumClass> <http://www.w3.org/2000/01/rdf-schema#comment> "This class represents the seat type of premium class within the ontology."@en .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#PremiumClass> <http://www.w3.org/2000/01/rdf-schema#label> "Premium Class"@en .
+# 
+# http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Recommendation
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Recommendation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Recommendation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Review> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Recommendation> <http://www.w3.org/2000/01/rdf-schema#comment> "This class is used to classify whether a user recommends or does not recommend a flight in a review within the ontology."@en .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Recommendation> <http://www.w3.org/2000/01/rdf-schema#label> "Recommendation"@en .
+# 
+# http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Recommended
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Recommended> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Recommended> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Recommendation> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Recommended> <http://www.w3.org/2000/01/rdf-schema#comment> "This class is used to classify a review when the passenger does recommend the flight within the ontology."@en .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Recommended> <http://www.w3.org/2000/01/rdf-schema#label> "Recommended"@en .
+# 
+# http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Review
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Review> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Review> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid7 .
+_:genid7 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Flight> .
+_:genid7 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#hasReviewed> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Review> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid8 .
+_:genid8 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Passenger> .
+_:genid8 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#isAnsweredBy> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Review> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid9 .
+_:genid9 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid10 .
+_:genid10 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid12 .
+_:genid12 <http://www.w3.org/2001/XMLSchema#minInclusive> "0.0"^^<http://www.w3.org/2001/XMLSchema#float> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid10 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#float> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid9 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#reviewRatingValue> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Review> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid13 .
+_:genid13 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid14 .
+_:genid14 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid16 .
+_:genid16 <http://www.w3.org/2001/XMLSchema#maxInclusive> "10.0"^^<http://www.w3.org/2001/XMLSchema#float> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid14 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#float> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid13 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#reviewRatingValue> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Review> <http://www.w3.org/2000/01/rdf-schema#comment> "This class represents the review answered by a passenger about a flight within the ontology. It serves as a container for feedback provided by passengers regarding their flight experiences. This class includes subclasses to classify the review based on various factors, such as the class of service (e.g., Business class, Economy class), the composition of the passenger group (e.g., solo traveler, family, business group), and any other relevant categorizations."@en .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Review> <http://www.w3.org/2000/01/rdf-schema#label> "Review"@en .
+# 
+# http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#SatisfiedPassenger
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#SatisfiedPassenger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#SatisfiedPassenger> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Passenger> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#SatisfiedPassenger> <http://www.w3.org/2000/01/rdf-schema#comment> "This class represents a satisfied passenger."@en .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#SatisfiedPassenger> <http://www.w3.org/2000/01/rdf-schema#label> "SatisfiedPassenger"@en .
+# 
+# http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#SeatType
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#SeatType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#SeatType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Review> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#SeatType> <http://www.w3.org/2000/01/rdf-schema#comment> "This class is used to classify the seating location of a passenger who is responding to the review within the ontology."@en .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#SeatType> <http://www.w3.org/2000/01/rdf-schema#label> "Seat Type"@en .
+# 
+# http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#SoloLeisure
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#SoloLeisure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#SoloLeisure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#PassengerType> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#SoloLeisure> <http://www.w3.org/2000/01/rdf-schema#comment> "This class represents a subclass within the ontology, specifically categorizing passengers who travel solo for leisure purposes."@en .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#SoloLeisure> <http://www.w3.org/2000/01/rdf-schema#label> "Solo Leisure"@en .
+# 
+# http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#TransitFlight
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#TransitFlight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#TransitFlight> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Flight> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#TransitFlight> <http://www.w3.org/2000/01/rdf-schema#comment> "This class is used to classify a Flight within the ontology, indicating that it has a stopover airport."@en .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#TransitFlight> <http://www.w3.org/2000/01/rdf-schema#label> "TransitFlight"@en .
+# 
+# http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#TypeOfReview
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#TypeOfReview> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#TypeOfReview> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Review> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#TypeOfReview> <http://www.w3.org/2000/01/rdf-schema#comment> "This class is used to classify a review as either a good or bad review within the ontology, based on the rating or recommendation provided by the review of the passenger."@en .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#TypeOfReview> <http://www.w3.org/2000/01/rdf-schema#label> "Type Of Review"@en .
+# 
+# http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#UnknownRecommended
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#UnknownRecommended> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#UnknownRecommended> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Recommendation> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#UnknownRecommended> <http://www.w3.org/2000/01/rdf-schema#comment> "This class is used to classify a review when the recommendation of the passenger is unknown."@en .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#UnknownRecommended> <http://www.w3.org/2000/01/rdf-schema#label> "Unknown Recommended"@en .
+# 
+# http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Verification
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Verification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Verification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Review> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Verification> <http://www.w3.org/2000/01/rdf-schema#comment> "This class is used to represent whether a review has been verified within the ontology."@en .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Verification> <http://www.w3.org/2000/01/rdf-schema#label> "Verification"@en .
+# 
+# http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Verified
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Verified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Verified> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Verification> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Verified> <http://www.w3.org/2000/01/rdf-schema#comment> "This class is used to represent when a user's review of a flight is verified within the ontology."@en .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Verified> <http://www.w3.org/2000/01/rdf-schema#label> "Verified"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Aircraft001
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Aircraft001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Aircraft001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Aircraft> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Aircraft001> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#aircraftBrand> "Boeing" .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Aircraft001> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#aircraftModel> "747" .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Aircraft001> <http://www.w3.org/2000/01/rdf-schema#comment> "This instance represents a Boeing 747"@en .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Aircraft001> <http://www.w3.org/2000/01/rdf-schema#label> "Aircraft 001"@en .
+# 
+# http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Aircraft002
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Aircraft002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Aircraft002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Aircraft> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Aircraft002> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#aircraftBrand> "A380" .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Aircraft002> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#aircraftModel> "800" .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Aircraft002> <http://www.w3.org/2000/01/rdf-schema#comment> "This instance represents an A380 aircraft."@en .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Aircraft002> <http://www.w3.org/2000/01/rdf-schema#label> "Aircraft 002"@en .
+# 
+# http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Airport001
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Airport001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Airport001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Airport> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Airport001> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#airportName> "Tokyo" .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Airport001> <http://www.w3.org/2000/01/rdf-schema#comment> "This instance is used to represent the airport of Tokyo."@en .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Airport001> <http://www.w3.org/2000/01/rdf-schema#label> "Airport 001"@en .
+# 
+# http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Airport002
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Airport002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Airport002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Airport> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Airport002> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#airportName> "London Heathrow" .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Airport002> <http://www.w3.org/2000/01/rdf-schema#comment> "This instance is used to represents the airport of London Heathrow."@en .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Airport002> <http://www.w3.org/2000/01/rdf-schema#label> "Airport 002"@en .
+# 
+# http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Airport003
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Airport003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Airport003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Airport> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Airport003> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#airportName> "Doha" .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Airport003> <http://www.w3.org/2000/01/rdf-schema#comment> "This instance represents the airport of Doha"@en .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Airport003> <http://www.w3.org/2000/01/rdf-schema#label> "Airport 003"@en .
+# 
+# http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Country001
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Country001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Country001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Country> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Country001> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#countryName> "United Kingdom" .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Country001> <http://www.w3.org/2000/01/rdf-schema#comment> "This instance represents the country of United Kingdom" .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Country001> <http://www.w3.org/2000/01/rdf-schema#label> "Country 001"@en .
+# 
+# http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Country002
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Country002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Country002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Country> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Country002> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#countryName> "Qatar" .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Country002> <http://www.w3.org/2000/01/rdf-schema#comment> "This instance represents the country of Qatar."@en .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Country002> <http://www.w3.org/2000/01/rdf-schema#label> "Country 002"@en .
+# 
+# http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Flight001
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Flight001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Flight001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Flight> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Flight001> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#hasDestination> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Airport002> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Flight001> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#hasOrigin> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Airport001> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Flight001> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#hasStopOver> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Airport003> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Flight001> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#flightDate> "2024-03-02" .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Flight001> <http://www.w3.org/2000/01/rdf-schema#comment> "This is the instance of the flight of Mary Le"@en .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Flight001> <http://www.w3.org/2000/01/rdf-schema#label> "Flight 001"@en .
+# 
+# http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Flight002
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Flight002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Flight002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Flight> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Flight002> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#hasDestination> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Airport003> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Flight002> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#hasOrigin> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Airport001> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Flight002> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#hasVehicle> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Aircraft002> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Flight002> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#flightDate> "2024-02-25" .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Flight002> <http://www.w3.org/2000/01/rdf-schema#comment> "This is the instance of flight of Alwaleed Althani"@en .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Flight002> <http://www.w3.org/2000/01/rdf-schema#label> "Flight 002"@en .
+# 
+# http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Passenger001
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Passenger001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Passenger001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Passenger> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Passenger001> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#isFrom> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Country001> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Passenger001> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#personName> "Mary Le" .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Passenger001> <http://www.w3.org/2000/01/rdf-schema#comment> "This is the instance of the passenger named Mary Le."@en .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Passenger001> <http://www.w3.org/2000/01/rdf-schema#label> "Passenger 001"@en .
+# 
+# http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Passenger002
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Passenger002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Passenger002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Passenger> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Passenger002> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#isFrom> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Country002> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Passenger002> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#personName> "Alwaleed Althani" .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Passenger002> <http://www.w3.org/2000/01/rdf-schema#comment> "This is the instance of the passenger named Alwaleed Althani"@en .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Passenger002> <http://www.w3.org/2000/01/rdf-schema#label> "Passenger 002"@en .
+# 
+# http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Review001
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Review001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Review001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#EconomyClass> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Review001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#NotRecommended> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Review001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#NotVerified> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Review001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Review> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Review001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#SoloLeisure> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Review001> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#hasReviewed> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Flight001> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Review001> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#isAnsweredBy> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Passenger001> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Review001> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#reviewComment> "The delay of my flight from Haneda to Doha caused a bit of chaos upon arrival. Despite my efforts to reach the gate promptly, I was denied boarding due to luggage issues, and the lack of assistance added to the frustration. I paid for an Economy Comfort package, which was supposed to include an aisle seat. However, upon boarding, I was informed that no aisle seats were available, despite assurances beforehand. Additionally, my luggage tag was lost during the boarding pass exchange, leading to further uncertainty upon arrival in London. What was meant to be a 19-hour journey turned into a 27-hour ordeal. When I requested assistance from staff regarding a re-arrangement they promised to get back to me within 5-10 minutes, but no one followed up until I reached out again. The security queue at Heathrow on departure from the UK was incredibly long, with a wait time of about 1.5 hours just to get through. Overall, while the crew onboard was courteous and provided great service, the experience was marred by these inconveniences." .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Review001> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#reviewDate> "2024-03-02" .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Review001> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#reviewRatingValue> "1.0"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Review001> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#reviewTitle> "marred by inconveniences" .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Review001> <http://www.w3.org/2000/01/rdf-schema#comment> "This is the instance of the review answered by Mary Le"@en .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Review001> <http://www.w3.org/2000/01/rdf-schema#label> "Review 001"@en .
+# 
+# http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Review002
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Review002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Review002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#CoupleLeisure> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Review002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#FirstClass> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Review002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Review> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Review002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#UnknownRecommended> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Review002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Verified> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Review002> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#hasReviewed> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Flight002> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Review002> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#isAnsweredBy> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Passenger002> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Review002> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#reviewComment> "We flew on probably the first A380 the airline received but it’s up keep is very good the caviar was excellent and the rack of lamb was perfect the entertainment system though the screens were huge and not very cooperative it is very dated as for WiFi was bad to say the least. The seating in First Class was good and the toilets are huge I hope they update the A380." .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Review002> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#reviewDate> "2024-02-25" .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Review002> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#reviewRatingValue> "10.0"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Review002> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#reviewTitle> "I hope they update the A380" .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Review002> <http://www.w3.org/2000/01/rdf-schema#comment> "This is the instance of the review answered by Alwaleed Althani"@en .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Review002> <http://www.w3.org/2000/01/rdf-schema#label> "Review 002"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid17 <http://www.w3.org/2002/07/owl#members> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#SoloLeisure> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#FamilyLeisure> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#CoupleLeisure> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Business> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid22 <http://www.w3.org/2002/07/owl#members> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#PremiumClass> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#FirstClass> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#EconomyClass> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#BusinessClass> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Rules
+# #
+# #################################################################
+# 
+# 
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings/f> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings/a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings/p> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings/r> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings/v> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+_:genid27 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid27 <http://www.w3.org/2000/01/rdf-schema#comment> "This rule is used to classify instances of Flight as either DirectFlight or TransitFlight within the ontology" .
+_:genid27 <http://www.w3.org/2000/01/rdf-schema#label> "RULE005" .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid27 <http://www.w3.org/2003/11/swrl#body> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid29 .
+_:genid29 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings/a> .
+_:genid29 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings/f> .
+_:genid29 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#hasStopOver> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid31 .
+_:genid31 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings/f> .
+_:genid31 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Flight> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid27 <http://www.w3.org/2003/11/swrl#head> _:genid32 .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid33 .
+_:genid33 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings/f> .
+_:genid33 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#TransitFlight> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid34 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid34 <http://www.w3.org/2000/01/rdf-schema#comment> "This rule is used to classify instances of Passenger as either Satisfied or NotSatisfied based on their reviews within the ontology:" .
+_:genid34 <http://www.w3.org/2000/01/rdf-schema#label> "RULE004" .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid34 <http://www.w3.org/2003/11/swrl#body> _:genid39 .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid37 .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid35 .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid36 .
+_:genid36 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings/r> .
+_:genid36 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#BadReview> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid38 .
+_:genid38 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings/r> .
+_:genid38 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings/p> .
+_:genid38 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#hasAnswered> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid40 .
+_:genid40 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings/p> .
+_:genid40 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Passenger> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid34 <http://www.w3.org/2003/11/swrl#head> _:genid41 .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid42 .
+_:genid42 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings/p> .
+_:genid42 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#NotSatisfiedPassenger> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid43 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid43 <http://www.w3.org/2000/01/rdf-schema#comment> "This rule is used to classify instances of Passenger as either Satisfied or NotSatisfied based on their reviews within the ontology:" .
+_:genid43 <http://www.w3.org/2000/01/rdf-schema#label> "RULE003" .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid43 <http://www.w3.org/2003/11/swrl#body> _:genid48 .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid46 .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid44 .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid45 .
+_:genid45 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings/r> .
+_:genid45 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#GoodReview> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid47 .
+_:genid47 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings/r> .
+_:genid47 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings/p> .
+_:genid47 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#hasAnswered> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid49 .
+_:genid49 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings/p> .
+_:genid49 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Passenger> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid43 <http://www.w3.org/2003/11/swrl#head> _:genid50 .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid51 .
+_:genid51 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings/p> .
+_:genid51 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#SatisfiedPassenger> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid52 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid52 <http://www.w3.org/2000/01/rdf-schema#comment> "This rule is used to classify the instances of review that has a reviewRatingValue greater or equal than 5" .
+_:genid52 <http://www.w3.org/2000/01/rdf-schema#label> "RULE001" .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid52 <http://www.w3.org/2003/11/swrl#body> _:genid59 .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid57 .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid53 .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid54 .
+_:genid54 <http://www.w3.org/2003/11/swrl#arguments> _:genid56 .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid55 .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "5"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings/v> .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid54 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThanOrEqual> .
+<http://www.w3.org/2003/11/swrlb#greaterThanOrEqual> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Builtin> .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid58 .
+_:genid58 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings/v> .
+_:genid58 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings/r> .
+_:genid58 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#reviewRatingValue> .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid60 .
+_:genid60 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings/r> .
+_:genid60 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Review> .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid52 <http://www.w3.org/2003/11/swrl#head> _:genid61 .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid62 .
+_:genid62 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings/r> .
+_:genid62 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#GoodReview> .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid63 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid63 <http://www.w3.org/2000/01/rdf-schema#comment> "This rule is used to classify the instances of review that has a reviewRatingValue less than 5" .
+_:genid63 <http://www.w3.org/2000/01/rdf-schema#label> "RULE002" .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid63 <http://www.w3.org/2003/11/swrl#body> _:genid70 .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid68 .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid64 .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid65 .
+_:genid65 <http://www.w3.org/2003/11/swrl#arguments> _:genid67 .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid66 .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "5"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings/v> .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid65 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#lessThan> .
+<http://www.w3.org/2003/11/swrlb#lessThan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Builtin> .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid69 .
+_:genid69 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings/v> .
+_:genid69 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings/r> .
+_:genid69 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#reviewRatingValue> .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid71 .
+_:genid71 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings/r> .
+_:genid71 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Review> .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid63 <http://www.w3.org/2003/11/swrl#head> _:genid72 .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid73 .
+_:genid73 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings/r> .
+_:genid73 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#BadReview> .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
