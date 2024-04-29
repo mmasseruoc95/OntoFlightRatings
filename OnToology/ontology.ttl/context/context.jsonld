@@ -1,0 +1,209 @@
+{
+  "@context" : {
+    "Verified" : {
+      "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Verified"
+    },
+    "Verification" : {
+      "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Verification"
+    },
+    "Review" : {
+      "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Review"
+    },
+    "UnknownRecommended" : {
+      "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#UnknownRecommended"
+    },
+    "Recommendation" : {
+      "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Recommendation"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
+    "NotSatisfiedPassenger" : {
+      "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#NotSatisfiedPassenger"
+    },
+    "Country" : {
+      "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Country"
+    },
+    "reviewComment" : {
+      "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#reviewComment",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Recommended" : {
+      "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Recommended"
+    },
+    "topDataProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+    },
+    "isRuleEnabled" : {
+      "@id" : "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"
+    },
+    "reviewDate" : {
+      "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#reviewDate",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "CoupleLeisure" : {
+      "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#CoupleLeisure"
+    },
+    "GoodReview" : {
+      "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#GoodReview"
+    },
+    "TypeOfReview" : {
+      "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#TypeOfReview"
+    },
+    "reviewTitle" : {
+      "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#reviewTitle",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasDestination" : {
+      "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#hasDestination",
+      "@type" : "@id"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "aircraftModel" : {
+      "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#aircraftModel",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "NotVerified" : {
+      "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#NotVerified"
+    },
+    "countryName" : {
+      "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#countryName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "FirstClass" : {
+      "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#FirstClass"
+    },
+    "Business" : {
+      "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Business"
+    },
+    "Airport" : {
+      "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Airport"
+    },
+    "TransitFlight" : {
+      "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#TransitFlight"
+    },
+    "NotRecommended" : {
+      "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#NotRecommended"
+    },
+    "topObjectProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+      "@type" : "@id"
+    },
+    "hasFrom" : {
+      "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#hasFrom",
+      "@type" : "@id"
+    },
+    "isDestinationOf" : {
+      "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#isDestinationOf",
+      "@type" : "@id"
+    },
+    "personName" : {
+      "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#personName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "flightDate" : {
+      "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#flightDate",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Passenger" : {
+      "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Passenger"
+    },
+    "BadReview" : {
+      "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#BadReview"
+    },
+    "FamilyLeisure" : {
+      "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#FamilyLeisure"
+    },
+    "isAnsweredBy" : {
+      "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#isAnsweredBy",
+      "@type" : "@id"
+    },
+    "Aircraft" : {
+      "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Aircraft"
+    },
+    "hasVehicle" : {
+      "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#hasVehicle",
+      "@type" : "@id"
+    },
+    "hasAnswered" : {
+      "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#hasAnswered",
+      "@type" : "@id"
+    },
+    "isReviewedBy" : {
+      "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#isReviewedBy",
+      "@type" : "@id"
+    },
+    "SatisfiedPassenger" : {
+      "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#SatisfiedPassenger"
+    },
+    "isFrom" : {
+      "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#isFrom",
+      "@type" : "@id"
+    },
+    "isStopOverOf" : {
+      "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#isStopOverOf",
+      "@type" : "@id"
+    },
+    "hasReviewed" : {
+      "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#hasReviewed",
+      "@type" : "@id"
+    },
+    "Flight" : {
+      "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#Flight"
+    },
+    "EconomyClass" : {
+      "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#EconomyClass"
+    },
+    "hasOrigin" : {
+      "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#hasOrigin",
+      "@type" : "@id"
+    },
+    "aircraftBrand" : {
+      "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#aircraftBrand",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "sameAs" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#sameAs"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "reviewRatingValue" : {
+      "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#reviewRatingValue",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "PremiumClass" : {
+      "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#PremiumClass"
+    },
+    "SoloLeisure" : {
+      "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#SoloLeisure"
+    },
+    "BusinessClass" : {
+      "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#BusinessClass"
+    },
+    "isOriginOf" : {
+      "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#isOriginOf",
+      "@type" : "@id"
+    },
+    "hasStopOver" : {
+      "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#hasStopOver",
+      "@type" : "@id"
+    },
+    "SeatType" : {
+      "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#SeatType"
+    },
+    "airportName" : {
+      "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#airportName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "isVehicleOf" : {
+      "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#isVehicleOf",
+      "@type" : "@id"
+    },
+    "PassengerType" : {
+      "@id" : "http://www.semanticweb.org/mmasser95/ontologies/mmasser95/ontoFlightRatings#PassengerType"
+    }
+  }
+}
